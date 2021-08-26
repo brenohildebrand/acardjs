@@ -7,26 +7,35 @@
 
 class AnimationContext {
     animationQueue: AnimationCard[]
-    previousDurationTime: 0
+    previousAnimationDuration: number
 
     constructor() {
         this.animationQueue = []
-        this.previousDurationTime = 0
+        this.previousAnimationDuration = 0
     }
 
     start() {
-        setTimeout(function() {
-            this.runAnimationQueue()
-            console.log(this)
-        }, 0)
+        setTimeout(this.runAnimationQueue, 0)
     }
 
     runAnimationQueue() {
-
+        if(this.animationQueue.length > 0) {
+            setTimeout(() => {
+                this.runNextAnimationCard()
+                this.runAnimationQueue()
+            }, this.previousAnimationDuration)
+        }
     }
 
     runNextAnimationCard() {
+        const nextAnimationCard = this.animationQueue.shift()
+        
+        if(nextAnimationCard === undefined) {
+            throw new Error("AnimationCard is undefined!")
+        }
 
+        nextAnimationCard.run()
+        this.previousAnimationDuration = nextAnimationCard?.duration
     }
 }
 

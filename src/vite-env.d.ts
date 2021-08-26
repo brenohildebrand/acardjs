@@ -3,13 +3,5 @@
 type AnimationCard = {
     name: string
     duration: number
-    animate: Function
+    run: () => void
 }
-
-type Animation = {
-    name: string,
-    description: string,
-    run: (this: AnimatedElement) => void
-}
-
-type Animations = { [key: string]: Animation }
