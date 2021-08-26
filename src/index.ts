@@ -1,6 +1,0 @@
-/*
-    index.ts
-
-    This is on the top of everything. This file controls the library and should
-    keep everything running perfectly.
-*/

@@ -1,12 +1,13 @@
 {
-  "name": "myAnimationLibrary",
-  "version": "1.0.0",
-  "description": "A javascript animation library with no dependencies.",
-  "main": "index.ts",
-  "repository": "https://github.com/brenoh1ldebr4nd/myAnimationLibrary",
-  "author": "Breno Hildebrand <breno.h1ldebr4nd@gmail.com>",
-  "license": "MIT",
+  "name": "vite-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
   "devDependencies": {
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.2",
+    "vite": "^2.5.1"
   }
 }
