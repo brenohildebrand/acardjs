@@ -1,0 +1,12 @@
+{
+  "name": "myAnimationLibrary",
+  "version": "1.0.0",
+  "description": "A javascript animation library with no dependencies.",
+  "main": "index.ts",
+  "repository": "https://github.com/brenoh1ldebr4nd/myAnimationLibrary",
+  "author": "Breno Hildebrand <breno.h1ldebr4nd@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
