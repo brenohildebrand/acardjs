@@ -1,2 +1,2 @@
-# myAnimationLibrary
-It's a javascript animation library with no dependencies.
+# Acard
+A javascript animation library.
