@@ -18,7 +18,7 @@ class AnimationContext {
         setTimeout(this.runAnimationQueue, 0)
     }
 
-    runAnimationQueue() {
+    private runAnimationQueue() {
         if(this.animationQueue.length > 0) {
             setTimeout(() => {
                 this.runNextAnimationCard()
@@ -27,7 +27,7 @@ class AnimationContext {
         }
     }
 
-    runNextAnimationCard() {
+    private runNextAnimationCard() {
         const nextAnimationCard = this.animationQueue.shift()
         
         if(nextAnimationCard === undefined) {
