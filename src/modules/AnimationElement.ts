@@ -1,6 +1,0 @@
-/*
-    AnimationElement
-
-    This file contains the AnimationElement class. They are HTMLElements that
-    can be animated by their added functionalities.
-*/
