@@ -1,5 +1,5 @@
 # Acard
-### Acard is a javascript library to keep animations organized. 
+### Acard is a javascript library to create more maintainable code. It does it by using reusable cards.
 
 <br>
 
@@ -12,4 +12,4 @@
 
 ## Development Discussion
 
-Acard is probably the only custom data structure needed.
+- Let's explore what can be done with this idea.
